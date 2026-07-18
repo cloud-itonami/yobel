@@ -1,0 +1,3 @@
+{:fixture/set :shmita-5786
+ :wire-root "wire/fixtures/shmita_5786"
+ :files ["rite.json" "creditors.json" "debtors.json" "releases.json" "expected.json"]}

@@ -1,0 +1,11 @@
+{:actor/id "yobel"
+ :actor/glyph "יובל"
+ :actor/tier :tier-b
+ :actor/purpose "Voluntary collective debt-release rites with signed creditor consent and one-way principal reduction."
+ :actor/source-root "src/yobel"
+ :actor/test-root "test/yobel"
+ :actor/workflow-wire "wire/bpmn/yobel-rite-lifecycle.bpmn"
+ :actor/cells ["rite_declaration" "creditor_enrollment" "debtor_enrollment"
+               "release_settlement" "audit_witness"]
+ :actor/gates #{:voluntary-creditor-consent :no-principal-increase
+                :council-ratification :usdc-only :legal-fallback}}

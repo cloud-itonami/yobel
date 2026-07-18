@@ -1,0 +1,7 @@
+{:repository/id "com-etzhayyim-yobel"
+ :repository/layout :flat-west-project
+ :canonical-formats #{:edn}
+ :source-roots ["src"] :test-roots ["test"]
+ :data-roots ["data"] :contract-roots ["contracts"]
+ :wire-roots ["wire"]
+ :deprecated-artifacts #{:go :tinygo :shell :tracked-wasm}}

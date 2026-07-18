@@ -1,0 +1,7 @@
+{:decisions
+ [{:decision/id :eligibility-by-rite-type
+   :documentation "docs/decisions/eligibility-by-rite-type.md"}
+  {:decision/id :council-ratification-threshold
+   :documentation "docs/decisions/council-ratification-threshold.md"}
+  {:decision/id :tax-warning-by-jurisdiction
+   :documentation "docs/decisions/tax-warning-by-jurisdiction.md"}]}

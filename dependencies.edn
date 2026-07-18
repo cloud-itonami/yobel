@@ -1,0 +1,3 @@
+{:dependencies
+ [{:id "kotoba-lang/langgraph" :sha "a75fe35038dc9218e26b7da4940989cd13754769"}
+  {:id "kotoba-lang/eth-crypto" :sha "0f6fb314fc463f1891622665eeebdaebc90eba0d"}]}
