@@ -5,7 +5,7 @@
   (`wire/fixtures/shmita_5786/expected.json`): rite ratifies, exactly ONE release
   settles, the §2(b) one-way violation is blocked."
   (:require [clojure.java.io :as io]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is]]
             [clojure.walk :as walk]
             [langgraph.checkpoint :as cp]

@@ -16,7 +16,7 @@
     - Anchor creditorEnrollment MST record
 
   Murakumo node: gad (good fortune / treasury — Gen 49:19)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [langgraph.graph :as g]
             [yobel.ports :as ports]))
 

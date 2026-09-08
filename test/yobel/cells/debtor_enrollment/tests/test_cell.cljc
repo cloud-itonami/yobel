@@ -2,7 +2,7 @@
   "Tests for DebtorEnrollmentCell — DMN eligibility (R12 SBT, R13 §2(b), R1-R11 rite-type rules).
 
   Clojure port of cells/debtor_enrollment/tests/test_cell.py."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [langgraph.checkpoint :as cp]
             [langgraph.graph :as g]

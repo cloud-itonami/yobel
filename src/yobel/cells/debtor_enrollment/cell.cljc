@@ -14,7 +14,7 @@
   Murakumo node: issachar (discernment + scholar — Gen 49:14-15, 1 Chr 12:32).
 
   Clojure port of cells/debtor_enrollment/cell.py (langgraph-clj, portable .cljc)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [langgraph.graph :as g]
             [yobel.ports :as ports]))
 

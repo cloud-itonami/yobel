@@ -15,7 +15,7 @@
   (:require [babashka.cli :as cli]
             [cheshire.core :as json]
             [clojure.java.io :as io]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [langgraph.checkpoint :as cp]
             [yobel.orchestrator :as orch]
             [yobel.ports :as ports]))

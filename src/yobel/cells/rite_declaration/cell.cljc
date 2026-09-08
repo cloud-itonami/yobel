@@ -15,7 +15,7 @@
     - Anchor rite MST record via MST → IPFS → Base L2 batched anchor (AnchorBridge)
 
   Murakumo node: judah (leader, kingly proclamation — Gen 49:8-10)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [langgraph.graph :as g]
             [yobel.ports :as ports]))
 
@@ -59,7 +59,7 @@
 (defn charter-rider-gate
   "Scope text scan + DMN to enforce Charter Rider §2(a-h) prohibitions."
   [state charter-compliance-port]
-  (let [scope (str/lower-case (get state :scope ""))
+  (let [scope (str/lower (get state :scope ""))
         violations
         (cond-> []
           ;; §2(a) military — military debt forgiveness requires transparent-force-rd disclosure

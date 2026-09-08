@@ -3,7 +3,7 @@
   port of concrete_ports/web3_rite_registry.py (ADR-2605201800). Read-side: maps
   the on-chain `rites(bytes32)` public-mapping struct to a yobel.ports/Rite.
   Writes (declare/ratify/…) go through the contract directly, not this port."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [yobel.ports :as ports]
             [eth-crypto.core :as eth]
             [yobel.concrete-ports.web3-rpc :as rpc]))

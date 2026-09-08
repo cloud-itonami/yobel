@@ -7,7 +7,7 @@
   uint8/16/64/256, bool — no dynamic head/tail encoding needed."
   (:require [babashka.http-client :as http]
             [cheshire.core :as json]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [eth-crypto.core :as eth]))
 
 ;; ─── ABI encode (static words) ───────────────────────────────────────
