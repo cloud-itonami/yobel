@@ -17,7 +17,7 @@
     - dry-run fixtures drive end-to-end without an external BPMN engine
     - integration tests verify cell sequencing matches BPMN sequenceFlow
     - operators inspect rite state mid-flow via `snapshot`"
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [langgraph.graph :as g]
             [yobel.cells.audit-witness.cell :as audit]
             [yobel.cells.creditor-enrollment.cell :as creditor]

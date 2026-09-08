@@ -2,7 +2,7 @@
   "Tests for RiteDeclarationCell — input validation, Charter Rider §2 gate, Council DMN + ratification.
 
   Clojure port of tests/test_cell.py (pytest) onto clojure.test + langgraph-clj."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [langgraph.checkpoint :as cp]
             [langgraph.graph :as g]

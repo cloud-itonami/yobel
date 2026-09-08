@@ -2,7 +2,7 @@
   "Tests for CreditorEnrollmentCell — signedConsent verify, historical-record gate, §2(b) instrument gate.
 
   (Clojure port of tests/test_cell.py — clojure.test over langgraph-clj.)"
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [langgraph.checkpoint :as cp]
             [langgraph.graph :as g]

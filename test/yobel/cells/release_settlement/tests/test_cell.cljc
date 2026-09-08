@@ -2,7 +2,7 @@
   "Tests for ReleaseSettlementCell — tax warning DMN, one-way boundary, 5-way method dispatch.
 
   Clojure port of cells/release_settlement/tests/test_cell.py."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [langgraph.checkpoint :as cp]
             [langgraph.graph :as g]

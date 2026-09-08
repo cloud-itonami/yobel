@@ -2,7 +2,7 @@
   "Tests for AuditWitnessCell — chain continuity, signing, tampering detection.
 
   Clojure port of cells/audit_witness/tests/test_cell.py (clojure.test)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [langgraph.checkpoint :as cp]
             [langgraph.graph :as g]

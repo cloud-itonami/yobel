@@ -15,7 +15,7 @@
   Murakumo node: asher (blessed / abundance — Gen 49:20, Deut 33:24-25).
 
   Clojure port of cells/release_settlement/cell.py (langgraph-clj, portable .cljc)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [langgraph.graph :as g]
             [yobel.ports :as ports]))
 
@@ -60,8 +60,8 @@
   "COLLECT-hit DMN per dmn/tax-warning-by-jurisdiction.md."
   [state]
   (let [released-usdc (floor-div (or (:released-micro-usdc state) 0) 1000000)
-        debtor-jur (str/upper-case (or (:debtor-did state) ""))
-        creditor-jur (str/upper-case (or (:creditor-did state) ""))
+        debtor-jur (str/upper (or (:debtor-did state) ""))
+        creditor-jur (str/upper (or (:creditor-did state) ""))
         method (:release-method state)
         add (fn [acc msg level]
               (-> acc

@@ -16,7 +16,7 @@
     CreditorConsent { bytes32 riteId, bytes32 creditorDidHash, bytes32 debtsRootHash }
       creditorDidHash = keccak256(creditor_did)
       debtsRootHash   = keccak256(canonical-JSON(debts))   ; json.dumps sort_keys, (\",\",\":\")"
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [yobel.ports :as ports]
             [eth-crypto.core :as eth]))
 

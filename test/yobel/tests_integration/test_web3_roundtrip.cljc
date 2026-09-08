@@ -24,7 +24,7 @@
   declare→ratify→registerDebtCap→record-release through the cljc ports, and asserts
   the §2(b) over-cap release reverts. Anvil is torn down in a `finally`."
   (:require [clojure.test :refer [deftest is testing]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [babashka.fs :as fs]
             [babashka.process :as p]
             [cheshire.core :as json]
