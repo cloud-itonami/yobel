@@ -5,7 +5,7 @@
         io.github.kotoba-lang/eth-crypto
         {:git/url "https://github.com/kotoba-lang/eth-crypto.git"
          :git/sha "0f6fb314fc463f1891622665eeebdaebc90eba0d"}}
- :tasks {test {:task (load-file "run_tests.clj")}
+ :tasks {test {:task (load-file "run_tests.kotoba")}
          test:integration {:doc "Operator-run Anvil integration suite"
                            :task (do (require 'clojure.test
                                               'yobel.tests-integration.test-web3-roundtrip)
