@@ -22,7 +22,7 @@ A real-world shmita year is currently underway. This fixture instantiates a synt
 ## Run
 
 ```bash
-bb -m yobel.dry-run --fixture ./wire/fixtures/shmita_5786
+kbb -m yobel.dry-run --fixture ./wire/fixtures/shmita_5786
 ```
 
 Dry-run uses the in-memory `Fake*` port stubs from `conftest.py` adapted to a non-pytest entrypoint.
