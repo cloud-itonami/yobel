@@ -10,6 +10,6 @@
 - `docs/` — actor-owned ADRs, governance, deployment, and decision documentation
 - `wire/abi/`, `wire/fixtures/`, `wire/bpmn/` — external JSON and BPMN projections
 
-Run `bb test` for the deterministic offline suite. Run `bb test:integration` only with Anvil available; it exercises the committed contract bytecode and is intentionally separate from the default gate.
+Run `kbb -M:test` for the deterministic offline suite. Run `kbb -M:test:integration` only with Anvil available; it exercises the committed contract bytecode and is intentionally separate from the default gate.
 
 The actor does not create debt, increase principal, force creditor participation, provide legal advice, or settle fiat.

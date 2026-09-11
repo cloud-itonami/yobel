@@ -23,7 +23,7 @@ The straightforward approach — let `@etzhayyim/bpmn-sdk-runtime` (TS) drive ex
 
 1. **Cross-runtime IPC**: the TS runtime calls into the clj/bb cells. Options: subprocess + JSON stdin/stdout, HTTP localhost, gRPC. All add latency + failure modes.
 2. **State synchronization**: BPMN process state (variables, instance ID, currentActivities) lives in the TS runtime; the langgraph-clj cell state lives in the clj/bb checkpointer. Keeping them in sync requires duplicate state machine logic.
-3. **Test infrastructure**: a full integration test would need both clj/bb (`bb test` + langgraph-clj) and TS (jest/vitest + @etzhayyim/bpmn-sdk-*) test harnesses. The current `./` is clj/bb-only (fully ported off Python, no `.py` remains).
+3. **Test infrastructure**: a full integration test would need both clj/bb (`kbb -M:test` + langgraph-clj) and TS (jest/vitest + @etzhayyim/bpmn-sdk-*) test harnesses. The current `./` is clj/bb-only (fully ported off Python, no `.py` remains).
 
 At S2, the cost/benefit doesn't favor cross-runtime orchestration. The clj/bb orchestrator is direct, debuggable, and matches the BPMN XML structure 1:1 by construction.
 

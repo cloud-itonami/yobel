@@ -1,5 +1,5 @@
 (ns yobel.tests-integration.test-web3-roundtrip
-  "EVM integration harness (bb port of tests_integration/test_web3_roundtrip.py,
+  "EVM integration harness (kbb -M:port of tests_integration/test_web3_roundtrip.py,
   ADR-2605201800; final web3.py/eth_account → eth-crypto-clj prune). Operator-run:
   needs foundry's `anvil` on PATH.
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 (ns yobel.scripts.dry-run
   "yobel dry-run CLI — cljc port of scripts/dry_run.py. Drives a fixture rite
   end-to-end through the BPMN orchestrator (yobel.orchestrator) with in-memory
@@ -6,12 +6,12 @@
   deliberation). Prints a JSON report of what each cell would have done.
 
   Usage (from repo root):
-    bb -m yobel.dry-run --fixture ./wire/fixtures/shmita_5786 [--check-golden]
+    kbb -m yobel.dry-run --fixture ./wire/fixtures/shmita_5786 [--check-golden]
 
   Exit 0 = ran end-to-end · 1 = load/crash · 2 = golden-file divergence.
 
   NOTE: the same wiring + golden checks also run as a unit test
-  (yobel.tests.test-orchestrator), which is included by `bb test`."
+  (yobel.tests.test-orchestrator), which is included by `kbb -M:test`."
   (:require [babashka.cli :as cli]
             [cheshire.core :as json]
             [clojure.java.io :as io]
