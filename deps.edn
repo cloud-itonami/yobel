@@ -5,9 +5,11 @@
         ;; this repo silently rides whatever a sibling happens to name.
         io.github.kotoba-lang/text {:git/sha "73bdb13ae7a3d004b44bca08be03a3191157a38f"}
        io.github.kotoba-lang/langgraph
-        {:git/url "https://github.com/kotoba-lang/langgraph.git"
-         :git/sha "a75fe35038dc9218e26b7da4940989cd13754769"}
+        {:git/url "https://github.com/kotoba-lang/kotoba.git"
+         :git/sha "325baa31020aa214bd17cb39e3803712f92f5a1a"
+         :deps/root "lib/kotoba.langgraph"}
         io.github.kotoba-lang/eth-crypto
-        {:git/url "https://github.com/kotoba-lang/eth-crypto.git"
-         :git/sha "0f6fb314fc463f1891622665eeebdaebc90eba0d"}}
+        {:git/url "https://github.com/kotoba-lang/kotoba.git"
+         :git/sha "325baa31020aa214bd17cb39e3803712f92f5a1a"
+         :deps/root "lib/kotoba.ethCrypto"}}
  :aliases {:test {:extra-paths ["test"]}}}
